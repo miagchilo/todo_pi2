@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Task Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <h2>Fun Task Form</h2>
+
+    <form id="taskForm" action="/submit_task" method="post">
+
+        <!-- Task input -->
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="task" required class="text-inputs">
+        <br>
+
+        <!-- Description field -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" class="text-inputs"></textarea>
+        <br>
+
+        <!-- Due Date -->
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" class="text-inputs">
+        <br>
+
+        <!-- Priority -->
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" class="text-inputs">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <br>
+
+        <!-- Task Type -->
+        <label>Task Type:</label>
+        <label for="personal">Personal</label>
+        <input type="radio" id="personal" name="taskType" value="personal">
+        <label for="work">Work</label>
+        <input type="radio" id="work" name="taskType" value="work">
+        <br>
+
+        <!-- Urgent Checkbox -->
+        <input type="checkbox" id="urgent" name="urgent">
+        <label for="urgent">Urgent</label>
+        <br>
+
+        <!-- Additional Fields for Creativity -->
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" class="text-inputs">
+        <br>
+
+        <label for="color">Task Color:</label>
+        <input type="color" id="color" name="color">
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit" id="submitButton">
+
+    </form>
+
+    <div id="taskContainer">
+        <!-- Tasks will be appended here -->
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
