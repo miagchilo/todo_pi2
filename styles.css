@@ -48,6 +48,9 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 #submitButton:hover {
@@ -70,6 +73,7 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     max-width: 500px; 
+    margin: 0 5px 5px;
 }
 
 .task h3 {
